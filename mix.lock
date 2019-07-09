@@ -5,7 +5,7 @@
   "cowlib": {:hex, :cowlib, "2.6.0", "8aa629f81a0fc189f261dc98a42243fa842625feea3c7ec56c48f4ccdb55490f", [:rebar3], [], "hexpm"},
   "csvlixir": {:hex, :csvlixir, "1.0.0", "e9fd30abfca2d312390060e86bb7ec52487c813824dcccad45bb13e85ecad6b1", [:mix], [], "hexpm"},
   "db_connection": {:hex, :db_connection, "2.1.0", "122e2f62c4906bf2e49554f1e64db5030c19229aa40935f33088e7d543aa79d0", [:mix], [{:connection, "~> 1.0.2", [hex: :connection, repo: "hexpm", optional: false]}], "hexpm"},
-  "decimal": {:hex, :decimal, "1.7.0", "30d6b52c88541f9a66637359ddf85016df9eb266170d53105f02e4a67e00c5aa", [:mix], [], "hexpm"},
+  "decimal": {:hex, :decimal, "1.8.0", "ca462e0d885f09a1c5a342dbd7c1dcf27ea63548c65a65e67334f4b61803822e", [:mix], [], "hexpm"},
   "earmark": {:hex, :earmark, "0.2.1", "ba6d26ceb16106d069b289df66751734802777a3cbb6787026dd800ffeb850f3", [:mix], [], "hexpm"},
   "ecto": {:hex, :ecto, "3.1.6", "e890bf66c1d4d8e2b8e010f7cba092a08139b55437bc3382371f72a6ee40757e", [:mix], [{:decimal, "~> 1.6", [hex: :decimal, repo: "hexpm", optional: false]}, {:jason, "~> 1.0", [hex: :jason, repo: "hexpm", optional: true]}], "hexpm"},
   "ex_doc": {:hex, :ex_doc, "0.12.0", "b774aabfede4af31c0301aece12371cbd25995a21bb3d71d66f5c2fe074c603f", [:mix], [{:earmark, "~> 0.2", [hex: :earmark, repo: "hexpm", optional: false]}], "hexpm"},
