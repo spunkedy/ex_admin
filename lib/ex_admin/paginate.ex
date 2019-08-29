@@ -43,9 +43,15 @@ defmodule ExAdmin.Paginate do
     pagination_information(name, record_number, record_count, record_count)
   end
 
+  defp try_inflex_singularize(string_to_singularize) do
+    Inflex.singularize(" #{name}")
+  rescue
+    _ -> string_to_singularize
+  end
+
   def pagination_information(name, record_number, record_number, record_count) do
     markup do
-      text(gettext("Displaying") <> Inflex.singularize(" #{name}") <> " ")
+      text(gettext("Displaying") <> try_inflex_singularize(" #{name}") <> " ")
       b("#{record_number}")
       text(" " <> gettext("of") <> " ")
       b("#{record_count}")
