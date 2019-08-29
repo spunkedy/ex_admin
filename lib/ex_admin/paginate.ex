@@ -44,9 +44,11 @@ defmodule ExAdmin.Paginate do
   end
 
   defp try_inflex_singularize(string_to_singularize) do
-    Inflex.singularize(string_to_singularize)
-  rescue
-    _ -> string_to_singularize
+    try do
+      Inflex.singularize(string_to_singularize)
+    rescue
+      _ -> string_to_singularize
+    end
   end
 
   def pagination_information(name, record_number, record_number, record_count) do
