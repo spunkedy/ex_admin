@@ -44,7 +44,7 @@ defmodule ExAdmin.Paginate do
   end
 
   defp try_inflex_singularize(string_to_singularize) do
-    Inflex.singularize(" #{name}")
+    Inflex.singularize(string_to_singularize)
   rescue
     _ -> string_to_singularize
   end
